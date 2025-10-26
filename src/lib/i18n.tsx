@@ -75,7 +75,7 @@ const translations: Record<'en' | 'es', Translations> = {
     },
     skills: {
       title: '> Loading Arsenal...',
-      backend: { title: 'Backend', items: ['Python', 'Django', 'Node.js', 'REST APIs'] },
+      backend: { title: 'Backend', items: ['Python', 'Django', 'Node.js', 'REST APIs', 'Python Meta-Programming', 'OOP'] },
       ai_data: { title: 'AI & Data', items: ['Langchain', 'Vertex AI'] },
       devops: { title: 'Containers & DevOps', items: ['Docker', 'Docker Compose', 'Git'] },
     },
@@ -121,7 +121,7 @@ const translations: Record<'en' | 'es', Translations> = {
     },
     skills: {
       title: '> Cargando Arsenal...',
-      backend: { title: 'Backend', items: ['Python', 'Django', 'Node.js', 'REST APIs'] },
+      backend: { title: 'Backend', items: ['Python', 'Django', 'Node.js', 'REST APIs', 'Python Meta-Programming', 'OOP'] },
       ai_data: { title: 'AI & Data', items: ['Langchain', 'Vertex AI'] },
       devops: { title: 'Containers & DevOps', items: ['Docker', 'Docker Compose', 'Git'] },
     },
