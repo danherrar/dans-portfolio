@@ -5,7 +5,7 @@ import { HERO_DATA } from '@/lib/data';
 
 export default function Hero() {
   return (
-    <section id="hero" className="flex min-h-[calc(100vh-85px)] flex-col items-center justify-center text-center py-20">
+    <section id="hero" className="flex flex-col items-center justify-center text-center py-32">
       <h1 className="font-headline text-7xl md:text-9xl text-foreground">
         Daniel Herrarte
       </h1>

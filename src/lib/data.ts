@@ -15,7 +15,7 @@ export const HERO_DATA = {
 };
 
 export const SKILLS_DATA = {
-  title: '> Loading Arsenal...',
+  title: '> Tech_Stack.log',
   backend: { title: 'Backend', items: ['Python', 'Django', 'Node.js', 'REST APIs', 'Python Meta-Programming', 'OOP', 'Flask'] },
   ai_data: { title: 'AI & Data', items: ['Langchain', 'Vertex AI'] },
   devops: { title: 'Containers & DevOps', items: ['Docker', 'Docker Compose', 'Git'] },
