@@ -7,6 +7,7 @@ export const SKILLS_DATA = {
 };
 
 export type Project = {
+  id: string,
   title: string;
   description: string;
   stack: string[];
@@ -19,11 +20,12 @@ export type Project = {
 
 export const PROJECTS_DATA: Project[] = [
   {
-    title: 'Sistema de Verificación de Trabajadores',
-    description: 'Sistema en Node.js para prevenir registros duplicados y asegurar la integridad de los datos de los trabajadores mediante un proceso de validación robusto.',
+    id: 'project1',
+    title: 'Worker Verification System',
+    description: 'A Node.js system to prevent duplicate registrations and ensure worker data integrity through a robust validation process.',
     stack: ['Node.js', 'REST APIs', 'Docker'],
     links: {
-      github: 'https://github.com',
+      github: 'https://github.com/dherrarte/AUTH_API_SW',
       diagram: '#',
     },
     image: {
@@ -34,11 +36,12 @@ export const PROJECTS_DATA: Project[] = [
     },
   },
   {
-    title: 'App de Transformación de Datos con IA',
-    description: 'Aplicación con Python y Langchain para automatizar la reestructuración y limpieza de grandes volúmenes de datos, mejorando la eficiencia del análisis posterior.',
+    id: 'project2',
+    title: 'AI Data Transformation App',
+    description: 'An application using Python and Langchain to automate the restructuring and cleaning of large data volumes, improving the efficiency of subsequent analysis.',
     stack: ['Python', 'Langchain', 'Vertex AI', 'Streamlit'],
     links: {
-      github: 'https://github.com',
+      github: 'https://github.com/dherrarte/Transformaci-n_de_datos',
       diagram: '#',
     },
     image: {
@@ -54,17 +57,17 @@ export const EXPERIENCE_DATA = [
   {
     role: 'Software Engineer',
     company: 'Zubale',
-    period: 'SEP 2021 - PRESENTE',
+    period: 'SEP 2021 - PRESENT',
     description: [
-      'Diseño de 3+ herramientas de automatización clave.',
-      'Optimización de BBDD y queries en Django (mejora del 25% en APIs).',
-      'Liderazgo en herramienta interna usada por +50 empleados.',
+      'Designed 3+ key automation tools.',
+      'Optimized DBs and queries in Django (25% improvement in APIs).',
+      'Led an internal tool used by +50 employees.',
     ],
   },
 ];
 
 export const NAV_LINKS = [
-  { name: 'Proyectos', href: '#projects' },
-  { name: 'Experiencia', href: '#experience' },
-  { name: 'Contacto', href: '#contact' },
+  { name: 'Projects', href: '#projects' },
+  { name: 'Experience', href: '#experience' },
+  { name: 'Contact', href: '#contact' },
 ];

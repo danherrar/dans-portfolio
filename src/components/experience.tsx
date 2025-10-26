@@ -1,11 +1,14 @@
-import { EXPERIENCE_DATA } from '@/lib/data';
+'use client';
+import { useI18n } from '@/lib/i18n';
 
 export default function Experience() {
+  const { t } = useI18n();
+
   return (
     <section id="experience" className="py-20">
-      <h3 className="font-headline text-4xl text-accent mb-12">&gt; Historial_de_Servicio.log</h3>
+      <h3 className="font-headline text-4xl text-accent mb-12">{t.experience.title}</h3>
       <div className="relative pl-8 border-l-4 border-muted">
-        {EXPERIENCE_DATA.map((job, index) => (
+        {t.experience.jobs.map((job, index) => (
           <div key={index} className="mb-12 relative">
             <div className="absolute -left-[22px] top-1 w-6 h-6 bg-accent rounded-none border-4 border-background flex items-center justify-center" style={{ transform: 'rotate(45deg)'}}>
                <div className="w-2 h-2 bg-background" style={{ transform: 'rotate(-45deg)'}} />
