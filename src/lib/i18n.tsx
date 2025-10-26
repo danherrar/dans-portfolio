@@ -67,7 +67,7 @@ const translations: Record<'en' | 'es', Translations> = {
       { name: 'Contact', href: '#contact' },
     ],
     hero: {
-      subtitle: 'Backend Developer with experience in Python, Django, Node.js, and automation. I transform data and optimize systems to create efficient solutions. I am also interested in indie game development with Python and some pixel art (@pixel.gt_).',
+      subtitle: 'Backend Developer with experience mostly in Python, Django, automation, I transform data and optimize systems to create efficient solutions I am also interested on indie game dev with Python and some pixel art (IG:@pixel.gt_)',
       cta: {
         projects: 'View Projects',
         contact: 'Contact Me',
@@ -75,7 +75,7 @@ const translations: Record<'en' | 'es', Translations> = {
     },
     skills: {
       title: '> Loading Arsenal...',
-      backend: { title: 'Backend', items: ['Python', 'Django', 'Node.js', 'REST APIs', 'Python Meta-Programming', 'OOP'] },
+      backend: { title: 'Backend', items: ['Python', 'Django', 'Node.js', 'REST APIs', 'Python Meta-Programming', 'OOP', 'Flask'] },
       ai_data: { title: 'AI & Data', items: ['Langchain', 'Vertex AI'] },
       devops: { title: 'Containers & DevOps', items: ['Docker', 'Docker Compose', 'Git'] },
     },
