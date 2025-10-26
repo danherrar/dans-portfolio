@@ -72,9 +72,9 @@ export default {
         'placeholder-border': 'hsl(var(--placeholder-border))',
       },
       borderRadius: {
-        lg: 'var(--radius)',
-        md: 'var(--radius)',
-        sm: 'var(--radius)',
+        lg: '0px',
+        md: '0px',
+        sm: '0px',
       },
       keyframes: {
         'accordion-down': {
