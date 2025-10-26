@@ -1,6 +1,7 @@
 'use client';
 import { createContext, useContext, useState, ReactNode } from 'react';
 import type { ImagePlaceholder } from './placeholder-images';
+import { Instagram } from 'lucide-react';
 
 type Project = {
   id: string;
@@ -46,6 +47,7 @@ type Translations = {
     viewCode: string;
     viewDiagram: string;
     data: Project[];
+    emptyState: string;
   };
   experience: {
     title: string;
@@ -81,40 +83,8 @@ const translations: Record<'en' | 'es', Translations> = {
       title: '> Directory: /featured_projects',
       viewCode: 'View Code (GitHub)',
       viewDiagram: 'View Diagram',
-      data: [
-        {
-          id: 'project1',
-          title: 'Worker Verification System',
-          description: 'A Node.js system to prevent duplicate registrations and ensure worker data integrity through a robust validation process.',
-          stack: ['Node.js', 'REST APIs', 'Docker'],
-          links: {
-            github: 'https://github.com/dherrarte/AUTH_API_SW',
-            diagram: '#',
-          },
-          image: {
-            id: 'project1',
-            description: 'Architecture diagram for the worker verification system.',
-            imageUrl: 'https://picsum.photos/seed/project1/600/400',
-            imageHint: 'architecture diagram',
-          },
-        },
-        {
-          id: 'project2',
-          title: 'AI Data Transformation App',
-          description: 'An application using Python and Langchain to automate the restructuring and cleaning of large data volumes, improving the efficiency of subsequent analysis.',
-          stack: ['Python', 'Langchain', 'Vertex AI', 'Streamlit'],
-          links: {
-            github: 'https://github.com/dherrarte/Transformaci-n_de_datos',
-            diagram: '#',
-          },
-          image: {
-            id: 'project2',
-            description: 'Data flow diagram for the AI data transformation app.',
-            imageUrl: 'https://picsum.photos/seed/project2/600/400',
-            imageHint: 'data flow',
-          },
-        },
-      ],
+      data: [],
+      emptyState: "New projects will be uploaded soon...",
     },
     experience: {
       title: '> Service_History.log',
@@ -159,40 +129,8 @@ const translations: Record<'en' | 'es', Translations> = {
       title: '> Directorio: /proyectos_destacados',
       viewCode: 'Ver Código (GitHub)',
       viewDiagram: 'Ver Diagrama',
-      data: [
-        {
-          id: 'project1',
-          title: 'Sistema de Verificación de Trabajadores',
-          description: 'Sistema en Node.js para prevenir registros duplicados y asegurar la integridad de los datos de los trabajadores mediante un proceso de validación robusto.',
-          stack: ['Node.js', 'REST APIs', 'Docker'],
-          links: {
-            github: 'https://github.com/dherrarte/AUTH_API_SW',
-            diagram: '#',
-          },
-          image: {
-            id: 'project1',
-            description: 'Architecture diagram for the worker verification system.',
-            imageUrl: 'https://picsum.photos/seed/project1/600/400',
-            imageHint: 'architecture diagram',
-          },
-        },
-        {
-          id: 'project2',
-          title: 'App de Transformación de Datos con IA',
-          description: 'Aplicación con Python y Langchain para automatizar la reestructuración y limpieza de grandes volúmenes de datos, mejorando la eficiencia del análisis posterior.',
-          stack: ['Python', 'Langchain', 'Vertex AI', 'Streamlit'],
-          links: {
-            github: 'https://github.com/dherrarte/Transformaci-n_de_datos',
-            diagram: '#',
-          },
-          image: {
-            id: 'project2',
-            description: 'Data flow diagram for the AI data transformation app.',
-            imageUrl: 'https://picsum.photos/seed/project2/600/400',
-            imageHint: 'data flow',
-          },
-        },
-      ],
+      data: [],
+      emptyState: "Próximamente se subirán nuevos proyectos...",
     },
     experience: {
       title: '> Historial_de_Servicio.log',
