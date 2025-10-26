@@ -67,7 +67,7 @@ const translations: Record<'en' | 'es', Translations> = {
       { name: 'Contact', href: '#contact' },
     ],
     hero: {
-      subtitle: 'Backend Developer with experience in Python, Django, Node.js, and automation. I transform data and optimize systems to create efficient solutions. I am also interested in indie game development with Python and I am a pixel artist in the process (@pixel.gt_).',
+      subtitle: 'Backend Developer with experience in Python, Django, Node.js, and automation. I transform data and optimize systems to create efficient solutions. I am also interested in indie game development with Python and some pixel art (@pixel.gt_).',
       cta: {
         projects: 'View Projects',
         contact: 'Contact Me',
@@ -113,7 +113,7 @@ const translations: Record<'en' | 'es', Translations> = {
       { name: 'Contacto', href: '#contact' },
     ],
     hero: {
-      subtitle: 'Desarrollador Backend con experiencia en Python, Django, Node.js y automatización. Transformo datos y optimizo sistemas para crear soluciones eficientes. También me interesa el desarrollo de videojuegos indie con Python y soy un pixel artist en proceso (@pixel.gt_).',
+      subtitle: 'Desarrollador Backend con experiencia en Python, Django, Node.js y automatización. Transformo datos y optimizo sistemas para crear soluciones eficientes. También me interesa el desarrollo de videojuegos indie con Python y algo de pixel art (@pixel.gt_).',
       cta: {
         projects: 'Ver Proyectos',
         contact: 'Contactar',
