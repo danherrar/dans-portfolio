@@ -4,14 +4,13 @@ import { Badge } from '@/components/ui/badge';
 import Link from 'next/link';
 import Image from 'next/image';
 import type { Project } from '@/lib/data';
-import { useI18n } from '@/lib/i18n';
+import { PROJECTS_DATA } from '@/lib/data';
 
 const WindowButton = ({ color }: { color: string }) => (
   <div className={`w-3.5 h-3.5 ${color} rounded-none`} />
 );
 
 export default function ProjectCard({ project }: { project: Project }) {
-  const { t } = useI18n();
   return (
     <div className="bg-secondary border-4 border-border rounded-none flex flex-col shadow-lg">
       <div className="bg-brand-purple flex items-center justify-between px-3 py-1.5 border-b-4 border-border">
@@ -46,10 +45,10 @@ export default function ProjectCard({ project }: { project: Project }) {
         </div>
         <div className="flex gap-4 mt-auto pt-4">
           <Button asChild variant="outline" className="rounded-none font-body border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-colors w-full">
-            <Link href={project.links.github} target="_blank" rel="noopener noreferrer">{t.projects.viewCode}</Link>
+            <Link href={project.links.github} target="_blank" rel="noopener noreferrer">{PROJECTS_DATA.viewCode}</Link>
           </Button>
           <Button asChild variant="outline" className="rounded-none font-body border-muted-foreground text-muted-foreground hover:bg-muted-foreground hover:text-secondary transition-colors w-full">
-            <Link href={project.links.diagram}>{t.projects.viewDiagram}</Link>
+            <Link href={project.links.diagram}>{PROJECTS_DATA.viewDiagram}</Link>
           </Button>
         </div>
       </div>

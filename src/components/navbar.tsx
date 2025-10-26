@@ -6,15 +6,13 @@ import { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
 import { Button } from './ui/button';
-import { useI18n } from '@/lib/i18n';
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState('');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { t, setLang, lang } = useI18n();
 
   useEffect(() => {
-    const sections = t.navLinks.map(link => document.getElementById(link.href.substring(1)));
+    const sections = NAV_LINKS.map(link => document.getElementById(link.href.substring(1)));
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -36,11 +34,7 @@ export default function Navbar() {
         if (section) observer.unobserve(section);
       });
     };
-  }, [t.navLinks]);
-
-  const toggleLanguage = () => {
-    setLang(lang === 'en' ? 'es' : 'en');
-  };
+  }, []);
 
   return (
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-sm">
@@ -49,7 +43,7 @@ export default function Navbar() {
           Daniel Herrarte
         </Link>
         <div className="hidden md:flex items-center gap-6">
-          {t.navLinks.map((link) => (
+          {NAV_LINKS.map((link) => (
             <Link
               key={link.name}
               href={link.href}
@@ -61,9 +55,6 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
-           <Button onClick={toggleLanguage} variant="ghost" size="sm" className="font-body text-lg">
-            {lang === 'en' ? 'ES' : 'EN'}
-          </Button>
         </div>
         <div className="md:hidden">
           <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -75,7 +66,7 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden bg-secondary">
            <div className="flex flex-col items-center gap-4 py-4">
-            {t.navLinks.map((link) => (
+            {NAV_LINKS.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
@@ -88,9 +79,6 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <Button onClick={toggleLanguage} variant="ghost" size="sm" className="font-body text-lg">
-              {lang === 'en' ? 'ES' : 'EN'}
-            </Button>
           </div>
         </div>
       )}

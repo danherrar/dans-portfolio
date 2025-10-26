@@ -1,13 +1,28 @@
 import type { ImagePlaceholder } from './placeholder-images';
 
+export const NAV_LINKS = [
+  { name: 'Projects', href: '#projects' },
+  { name: 'Experience', href: '#experience' },
+  { name: 'Contact', href: '#contact' },
+];
+
+export const HERO_DATA = {
+  subtitle: 'Backend Developer with experience mostly in Python, Django, automation, I transform data and optimize systems to create efficient solutions I am also interested on indie game dev with Python and some pixel art (IG:@pixel.gt_)',
+  cta: {
+    projects: 'View Projects',
+    contact: 'Contact Me',
+  },
+};
+
 export const SKILLS_DATA = {
-  backend: ['Python', 'Django', 'Node.js', 'REST APIs'],
-  ai_data: ['Langchain', 'Vertex AI'],
-  devops: ['Docker', 'Docker Compose', 'Git'],
+  title: '> Loading Arsenal...',
+  backend: { title: 'Backend', items: ['Python', 'Django', 'Node.js', 'REST APIs', 'Python Meta-Programming', 'OOP', 'Flask'] },
+  ai_data: { title: 'AI & Data', items: ['Langchain', 'Vertex AI'] },
+  devops: { title: 'Containers & DevOps', items: ['Docker', 'Docker Compose', 'Git'] },
 };
 
 export type Project = {
-  id: string,
+  id: string;
   title: string;
   description: string;
   stack: string[];
@@ -18,56 +33,39 @@ export type Project = {
   image: ImagePlaceholder;
 };
 
-export const PROJECTS_DATA: Project[] = [
-  {
-    id: 'project1',
-    title: 'Worker Verification System',
-    description: 'A Node.js system to prevent duplicate registrations and ensure worker data integrity through a robust validation process.',
-    stack: ['Node.js', 'REST APIs', 'Docker'],
-    links: {
-      github: 'https://github.com/dherrarte/AUTH_API_SW',
-      diagram: '#',
-    },
-    image: {
-      id: 'project1',
-      description: 'Architecture diagram for the worker verification system.',
-      imageUrl: 'https://picsum.photos/seed/project1/600/400',
-      imageHint: 'architecture diagram'
-    },
-  },
-  {
-    id: 'project2',
-    title: 'AI Data Transformation App',
-    description: 'An application using Python and Langchain to automate the restructuring and cleaning of large data volumes, improving the efficiency of subsequent analysis.',
-    stack: ['Python', 'Langchain', 'Vertex AI', 'Streamlit'],
-    links: {
-      github: 'https://github.com/dherrarte/Transformaci-n_de_datos',
-      diagram: '#',
-    },
-    image: {
-      id: 'project2',
-      description: 'Data flow diagram for the AI data transformation app.',
-      imageUrl: 'https://picsum.photos/seed/project2/600/400',
-      imageHint: 'data flow'
-    },
-  },
-];
+export const PROJECTS_DATA = {
+    title: '> Directory: /featured_projects',
+    viewCode: 'View Code (GitHub)',
+    viewDiagram: 'View Diagram',
+    data: [] as Project[],
+    emptyState: "New projects will be uploaded soon...",
+};
 
-export const EXPERIENCE_DATA = [
-  {
-    role: 'Software Engineer',
-    company: 'Zubale',
-    period: 'SEP 2021 - PRESENT',
-    description: [
-      'Designed 3+ key automation tools.',
-      'Optimized DBs and queries in Django (25% improvement in APIs).',
-      'Led an internal tool used by +50 employees.',
-    ],
-  },
-];
+export type Experience = {
+  role: string;
+  company: string;
+  period: string;
+  description: string[];
+};
 
-export const NAV_LINKS = [
-  { name: 'Projects', href: '#projects' },
-  { name: 'Experience', href: '#experience' },
-  { name: 'Contact', href: '#contact' },
-];
+export const EXPERIENCE_DATA = {
+    title: '> Service_History.log',
+    jobs: [
+        {
+          role: 'Software Engineer',
+          company: 'Zubale',
+          period: 'SEP 2021 - PRESENT',
+          description: [
+            'Designed 3+ key automation tools.',
+            'Optimized DBs and queries in Django (25% improvement in APIs).',
+            'Led an internal tool used by +50 employees.',
+          ],
+        },
+      ]
+};
+
+
+export const CONTACT_DATA = {
+    title: '> Initiate_Contact',
+    description: "Ready to build something or just want to chat? Send me a message.",
+};
