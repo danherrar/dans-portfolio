@@ -10,8 +10,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Inter', 'sans-serif'],
-        headline: ['Inter', 'sans-serif'],
+        body: ['VT323', 'monospace'],
+        headline: ['Pixelify Sans', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {
@@ -65,11 +65,16 @@ export default {
           border: 'hsl(var(--sidebar-border))',
           ring: 'hsl(var(--sidebar-ring))',
         },
+        'action-blue': 'hsl(var(--action-blue))',
+        'action-red-dark': 'hsl(var(--action-red-dark))',
+        'brand-purple': 'hsl(var(--brand-purple))',
+        'brand-orange': 'hsl(var(--brand-orange))',
+        'placeholder-border': 'hsl(var(--placeholder-border))',
       },
       borderRadius: {
         lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 2px)',
-        sm: 'calc(var(--radius) - 4px)',
+        md: 'var(--radius)',
+        sm: 'var(--radius)',
       },
       keyframes: {
         'accordion-down': {
